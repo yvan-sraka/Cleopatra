@@ -8,7 +8,7 @@ Cleopatra let you work on a shell where YeAST alias the commons tools you define
 This is needed when you want to use YeAST inside a complex runtime structure like, typically, a web framework!
 
 YeAST will be called in place of your standard interpreter without the shebang on top of your files.
-Interpreters should always take input as first positional argument and write the output on standard output.
+Interpreters should always take input as the first positional argument and write the output on standard output.
 
 **e.g.** You can aliases python like that:
 
@@ -16,13 +16,13 @@ Interpreters should always take input as first positional argument and write the
 cleopatra add python
 ```
 
-It will create inside `.cleopatra` subfolder (think it would be nice to add to your repository version source control), a `python` file which look like (it could diverge on your machine):
+It will create inside `.cleopatra` subfolder (think it would be nice to add to your repository version source control), a `python` file which looks like (it could diverge on your machine):
 
 ```shell
 YEAST_CONTEXT=/anaconda3/bin/python yeast $@
 ```
 
-Aliases are just shell script and hackable by design, you can add pre and post steps on them to customize your micro-virtual environment.
+Aliases are just shell scripts and hackable by design, you can add pre and post steps on them to customize your micro-virtual environment.
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ cleopatra <COMMAND>
 - `add <program>` Alias YeAST to be call instead of `<program>` inside virtual environment
 - `remove <program>` Remove alias set for `<program>`
 - `glue` Enter the virtual environment by opening a new shell where `./cleopatra` folder is in `PATH`
-- `unglue` Exit the virtual environment without leaving current opened shell
+- `unglue` Exit the virtual environment without leaving the currently opened shell
 
 ## Contributing
 
